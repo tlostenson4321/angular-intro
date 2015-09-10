@@ -7,7 +7,13 @@
 </head>
 <body ng-controller='mainController'>
 <button ng-click="button()"> Hello</button>
-<h1>Hello there!</h1>
-<p>This is going to be interesting!</p>
+<h1 ng-show='hide'>Hello there!</h1>
+<p ng-show='hide'>This is going to be interesting!</p>
+<button ng-click='button2()'>Show me!</button>
+<ul ng-show='show'>
+	<li>This</li>
+	<li>is</li>
+	<li>crazy</li>
+</ul>
 </body>
 </html>
