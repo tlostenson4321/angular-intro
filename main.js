@@ -4,8 +4,9 @@ angular.module('myApp')
 var mainController = function($scope){
 	
 	$scope.button = function(){
-
-		console.log('pushed')
+		
+		
 	}
 }
 
+angular.module('myApp').controller('mainController', ['$scope', mainController])
