@@ -1,13 +1,13 @@
-angular.module('myApp', [])
+angular.module('myApp', []);
 angular.module('myApp')
 
-var mainController = function($scope){
-	$scope.paragraph =function(){
-	$scope.pinkParagraph = pink;
-		
+angular.module('myApp').controller('mainController', ['$scope', function($scope){    
+	$scope.paragraph = 'pink';
+	$scope.excite = function(){
+		return + '!'
 	}
-	$scope.heading = + '!';
-}
+
+}])
 
 
 
@@ -23,4 +23,4 @@ var mainController = function($scope){
 
 
 
-angular.module('myApp').controller('mainController', ['$scope', mainController])
+// angular.module('myApp').controller('mainController', ['$scope', mainController])
