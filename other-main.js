@@ -6,6 +6,7 @@ var mainController = function($scope){
 	$scope.pinkParagraph = pink;
 		
 	}
+	$scope.heading = + '!';
 }
 
 
