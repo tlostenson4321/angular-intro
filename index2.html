@@ -4,16 +4,17 @@
 	<title></title>
 	<script src= "angular.min.js"></script>
 	<script src= "other-main.js"></script>
+	<link rel="stylesheet" href="main.css">
 </head>
 <body>
 <div ng-controller="mainController">
-	<a href ="">First Link</a>
+	<a href ="http://www.google.com" ng-click="confirm(event)">First Link</a>
 	<a href ="">Second Link</a>
 	<a href ="">Third Link</a>
-	<h1>This is a header</h1>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt dolor eget pellentesque accumsan. Aenean malesuada velit ultrices viverra elementum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In sit amet facilisis nisi. Donec non ornare est, at tristique tellus. Aliquam egestas arcu vel leo ullamcorper luctus.</p>
-	<h3>This is another header</h3>
-	<p> Sed blandit ex id mi placerat accumsan. Aenean quis interdum felis. Pellentesque posuere pretium urna, at facilisis orci lobortis et. Vestibulum sit amet dolor elementum, auctor felis ac, pretium enim. Aliquam mattis, velit ut rutrum tincidunt, ligula arcu eleifend lorem, scelerisque faucibus lorem diam in lacus.</p>
+	<h1>This is a header{{punctuation}}</h1>
+	<p ng-class="{pink: hovering}" ng-mouseenter="mouseenter()" ng-mouseleave="mouseleave($event)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt dolor eget pellentesque accumsan. Aenean malesuada velit ultrices viverra elementum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In sit amet facilisis nisi. Donec non ornare est, at tristique tellus. Aliquam egestas arcu vel leo ullamcorper luctus.</p>
+	<h3>This is another header{{punctuation}}</h3>
+	<p  ng-class="{pink: hovering}" ng-mouseenter="mouseenter()" ng-mouseleave="mouseleave($event)"> Sed blandit ex id mi placerat accumsan. Aenean quis interdum felis. Pellentesque posuere pretium urna, at facilisis orci lobortis et. Vestibulum sit amet dolor elementum, auctor felis ac, pretium enim. Aliquam mattis, velit ut rutrum tincidunt, ligula arcu eleifend lorem, scelerisque faucibus lorem diam in lacus.</p>
 </div>
 </body>
 </html>
