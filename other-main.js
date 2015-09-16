@@ -15,7 +15,7 @@ angular.module('myApp')
 
 	$scope.confirm = function(event) {
 		confirm ('Would you like to leave this page?') 
-		if ($scope.confirm === false) {
+		if (confirm === false) {
 
 				event.preventDefault();
 			}
